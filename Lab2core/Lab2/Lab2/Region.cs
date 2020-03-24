@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LAB2
+namespace Lab2
 {
     public class Region
     {
@@ -12,6 +12,6 @@ namespace LAB2
         public string RegionDescription { get; set; }
 
 
-        
+
     }
 }

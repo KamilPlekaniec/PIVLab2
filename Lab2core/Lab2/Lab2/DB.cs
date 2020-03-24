@@ -7,13 +7,13 @@ using System.Data;
 using Dapper;
 using System.Data.SqlClient;
 
-namespace LAB2
+namespace Lab2
 {
     public class DB
     {
         public void Select(IDbConnection connection)
         {
-            
+
             {
                 var regions = connection.Query<Region>("SELECT * FROM Region");
                 foreach (var item in regions)
@@ -27,7 +27,7 @@ namespace LAB2
             connection.Execute("INSERT INTO Region(RegionID, RegionDescription) " +
                 "VALUES(@id, @desc)",
                 new { id = id, desc = description });
-            
+
         }
 
         public void Delete(IDbConnection connection, int id, string description)
